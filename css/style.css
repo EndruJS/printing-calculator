@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
+#top {
+    width: 100%;
+    height: 110px;
+    position: relative;
+}
+#logo_cont {
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+    float: left;
+    font-family: sans-serif;
+    font-size: 30px;
+    border-right: 1px dotted silver;
+}
+p.under_logo {
+    color: gray;
+    font-size: 14px;
+    line-height: 0;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+}
+#top_menu {
+    width: auto;
+    height: 100px;
+    margin: 5px 5px 5px 0px;
+    float: left;
+}
+#top_menu ul {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+#top_menu ul li {
+    display: block;
+    float: left;
+}
+#top_menu ul li a {
+    display: block;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background-color: silver;
+    margin: 2px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    text-shadow: #000;
+}
+#clock_date_cont {
+    width: 400px;
+    height: 100px;
+    margin: 5px;
+    float: right;
+    font-family: sans-serif;
+    color: #000;
+    border-left: 1px dotted silver;
+}
+#today_celebrate {
+    float: left;
+    position: relative;
+    left:5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: silver;
+}
+#celebrate {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    color: #b30e1b;
+    font-weight: 600;
+
+}
+#today_celebrate span{
+    float: left;
+    position: absolute;
+}
+#clock_con {
+    font-size: 40px;
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right:15px;
+}
+#cl_hours {
+    float:left;
+    line-height: 40px;
+}
+#cl_minutes {
+    float:left;
+    line-height: 40px;
+}
+#cl_seconds {
+    float: left;
+    font-size: 20px;
+    margin: 17px 0 0 10px;
+    color: red;
+}
+#date_con {
+    position: absolute;
+    float:right;
+    right:10px;
+    top:60px;
+    width:150px;
+}
+#date_m_date {
+    float: left;
+    font-size: 50px;
+    margin: 0 5px 0 0;
+    line-height: 40px;
+}
+#date_month {
+    margin: 0;
+    font-weight: bold;
+    margin: 2px 0 0 0;
+}
+#date_year {
+    margin: 0;
+    font-weight: bold;
+}
+#middle {
+    width: 100%;
+    position: relative;
+    min-height:300px;
+    height: 100%;
+    border-top:1px solid silver;
+    display: table;
+}
+#left_menu {
+    width: 305px;
+    min-height: 100px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    border-right:1px dotted silver;
+}
+#content {
+    width: auto;
+    margin-left:310px;
+    min-height: 200px;
+    height: 100%;
+    position: relative;
+    display: table-cell;
+}
+#bottom {
+    width: 100%;
+    height: 115px;
+    background-color: silver;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/*---------------TABS-------------------*/
+.tabs {
+  min-width: 220px;
+  max-width: 900px;
+  padding: 0px;
+  margin: 0 10px 0 10px; 
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+/* стили секций с содержанием */
+#content1, #content2, #content3, #content4 {
+  display: none;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.tabs input.in_tabs {
+  display: none;
+}
+/* стили вкладок (табов) */
+.tabs label.tabs {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 10px 0;
+  font-weight: 600;
+  text-align: center;
+  color: #aaa;
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+  border-radius: 3px 3px 0 0;
+}
+/* шрифт-иконки от Font Awesome в формате Unicode */
+/*.tabs label.tabs:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.tabs label.tabs[for*="1"]:before {
+  content: "1";
+}
+.tabs label.tabs[for*="2"]:before {
+  content: "2";
+}
+.tabs label.tabs[for*="3"]:before {
+  content: "3";
+}
+.tabs label.tabs[for*="4"]:before {
+  content: "4";
+}*/
+/* изменения стиля заголовков вкладок при наведении */
+.tabs label.tabs:hover {
+  color: #888;
+  cursor: pointer;
+}
+/* стили для активной вкладки */
+.tabs input.in_tabs:checked + label.tabs {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 1px solid #009933;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+/* активация секций с помощью переключателя :checked */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+/* медиа запросы для различных типов носителей */  
+@media screen and (max-width: 680px) {
+  .tabs label.tabs {
+    font-size: 0;
+  }
+ 
+  .tabs label.tabs:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tabs label.tabs {
+    padding: 15px;
+  }
+}
+#content1 {
+    
+}
