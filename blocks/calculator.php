@@ -90,8 +90,26 @@
     </div>
     
 </div>
+<div id="binding">
+    <div id="bindText">Тип обгортки (для журналів): </div>
+    <div id="bindBox">
+        <span class="img" id="img-1"></span>
+        <input class="bindChekbox" id="bindChekbox-1" type="checkbox" name="binding" onclick="getBinding(this)">
+        <label for="bindChekbox-1">Скрепка</label>
 
-<p>
+    </div>
+    <div id="bindBox">
+        <span class="img" id="img-2"></span>
+        <input class="bindChekbox" id="bindChekbox-2" type="checkbox" name="binding" onclick="getBinding(this)">
+        <label for="bindChekbox-2">Скрепка та клейка стрічка</label>    
+    </div>
+    <div id="bindBox">
+        <span class="img" id="img-3"></span>
+        <input class="bindChekbox" id="bindChekbox-3" type="checkbox" name="binding" onclick="getBinding(this)">
+        <label for="bindChekbox-3">Тверда обгортка</label>
+    </div>
+</div>
+<p style="height: 25px;">
     <label for="discount" class="text_calc">Знижка: </label>
     <input type="number" id="discount" size="20" placeholder="0%" value="" />
 </p>
