@@ -436,25 +436,6 @@ var discount = document.getElementById('discount');
     
 count_res_discount[0].style.display = 'none';
 /*-----------------------------------------*/
-/*--- BOX-SHADOWS ACTIVE INPUT-SELECT FIELDS ---*/
-    function onBlur (field_id) {
-        var input = document.getElementById(field_id);
-        input.onblur = function () {
-            this.className = '';
-        }
-        input.onfocus = function () {
-            this.className = 'focus_field';
-        }
-    }
-    onBlur('input_value');
-    onBlur('paper_type');
-    onBlur('paper_format');
-    onBlur('colors_1');
-    onBlur('colors_2');
-    onBlur('sides_1');
-    onBlur('sides_2');
-    onBlur('discount');
-/*-----------------------------------------------*/
 
 
 

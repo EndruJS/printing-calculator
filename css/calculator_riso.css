@@ -54,13 +54,17 @@
     border-radius: 3px;
     background: url('/img/dropdown.png') no-repeat right #FEFEFE;
 }
-#paper_type > option {
-    background: #fff;
+select {
+    height: 25px;
+    width:210px;
+    font-size: 14px;
+    
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: url('/img/dropdown.png') no-repeat right #FEFEFE;
 }
-option:hover
-option:active
-option:focus
-option:checked {
+select > option:hover {
     border:1px solid #000;
 }
 .print_sides {

@@ -27,4 +27,30 @@ function get_Date () {
 get_Time();
 get_Date();
 
+/*--- BOX-SHADOWS ACTIVE INPUT-SELECT FIELDS ---*/
+    function onBlur (field_id) {
+        var input = document.getElementById(field_id);
+        input.onblur = function () {
+            this.className = '';
+        }
+        input.onfocus = function () {
+            this.className = 'focus_field';
+        }
+    }
+    onBlur('input_value');
+    onBlur('paper_type');
+    onBlur('paper_format');
+    onBlur('colors_1');
+    onBlur('colors_2');
+    onBlur('sides_1');
+    onBlur('sides_2');
+    onBlur('discount');
+    onBlur('input_quantity');
+    onBlur('paper_type_laser');
+    onBlur('paper_format_laser');
+    onBlur('input_inkjet');
+    onBlur('paper_type_IJ');
+    onBlur('paper_format_IJ');
+/*-----------------------------------------------*/
+
 document.getElementById('celebrate').innerHTML = "Свято Святого Миколая";

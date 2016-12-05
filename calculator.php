@@ -5,6 +5,7 @@
     <title>Test_Project</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/calculator_riso.css" />
+    <link rel="stylesheet" href="css/color_calc.css">
 </head>
 <body>
 
@@ -24,10 +25,10 @@
     </div>
     <div id="content">       
        <div class="tabs">
-            <input id="tab1" class="in_tabs" type="radio" name="tabs" checked>
+            <input id="tab1" class="in_tabs" type="radio" name="tabs">
             <label for="tab1" class="tabs" title="Вкладка 1">Тиражування (різографія)</label>
  
-            <input id="tab2" class="in_tabs" type="radio" name="tabs">
+            <input id="tab2" class="in_tabs" type="radio" name="tabs" checked>
             <label for="tab2" class="tabs" title="Вкладка 2">Кольоровий друк</label>
  
             <input id="tab3" class="in_tabs" type="radio" name="tabs">
@@ -40,7 +41,7 @@
                 <?php include("blocks/calculator.php");?>
             </div> 
             <div id="content2">
-                222
+                <?php include("blocks/color_calc.php");?>
             </div>  
             <div id="content3">
                 333
@@ -55,5 +56,6 @@
 <div id="bottom"></div>
 <script type="text/javascript" src="js/script.js"></script>
 <script src="js/calculator_riso.js"></script>
+<script src="js/color_calc.js"></script>
 </body>
 </html>
