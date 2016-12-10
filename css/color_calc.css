@@ -2,67 +2,197 @@
 	display: table;
 	width: 100%;
 	height: 100%;
-	min-height: 250px;
+	min-height: 350px;
 }
 /*-----LASER PRINT STYLE-----*/
 #laser_col {
 	display: table-cell;
 	width: 48%;
 	padding: 6px;
-	height: 310px;
+	height: 100%;
 	float: left;
 	border: 1px solid silver;
+	background-color: #ebf2f6;
 	border-radius: 8px;
+	overflow: hidden;
+}
+#title_laser {
+	display: block;
+	position: relative;
+	top: -7px;
+	left:-7px;
+	width: 104%;
+	height: 1.5em;
+	background-color: #0981bd;
+	text-align: center;
+	padding: 8px 0 0 0;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.2em;
 }
 #quantity_laser {
-
+	height: 30px;
+	padding: 2px 0 0 0;
 }
 #input_quantity {
-
+	font-style: italic;
+    text-align: right;
+    height: 23px;
+    width: 150px;
+    padding: 0 5px 0 0;
+    font-size: 15px;
+    border: 1px solid #0981bd;
+    border-radius: 5px;
 }
 #quality_laser {
 	display: table;
 	width: 100%;
+	margin: 5px 0;
+}
+#quality_laser input {
+	margin-top: 15px;
+}
+#quality_laser label {
+	font-size: 1em;
+}
+#textCheckImgLaser {
+	width: 35px;
+	height: 45px;
+	background-image: url('/img/Text.jpg');
+	background-repeat: no-repeat;
+	float: left;
+}
+#textPhotoCheckImgLaser {
+	width: 35px;
+	height: 45px;
+	background-image: url('/img/Text+photo.jpg');
+	background-repeat: no-repeat;
+	float: left;
+}
+#photoCheckImgLaser {
+	width: 35px;
+	height: 45px;
+	background-image: url('/img/Photo.jpg');
+	background-repeat: no-repeat;
+	float: left;
 }
 #laser_text {
+	
 	display: table-cell;
-	width: 33%;
+	width: 30%;
 }
 #laser_pic {
 	display: table-cell;
-	width: 33%;
+	width: 38%;
 }
 #laser_foto {	
 	display: table-cell;
-	width: 33%;
+	width: 30%;
+}
+#addLaserOption {
+	display: table;
+	margin: 8px 0;
+	padding: 3px 0 0 0;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver; 
+	width: 100%;
+	height: 35px;
+}
+#print_sides_laser {
+	display: table-cell;
+	width: 49%;
+}
+#print_sides_laser label::before {
+	position: relative;
+	top:4px;
+}
+#laserBlackPrint {
+	display: table-cell;
+	width: 49%;
+}
+#laserBlackPrint label::before {
+	position: relative;
+	top:4px;
+}
+#paper_select_type {
+	height: 30px;
+	margin: 5px 0;
+}
+#paper_format_select {
+	height: 30px;
+	margin: 5px 0;
 }
 #laser_discount {
-	
+	height: 23px;
+	padding: 7px 0;
+	margin: 5px 0;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver; 
+}
+#laser_discount_input {
+	font-style: italic;
+    text-align: right;
+    height: 23px;
+    width: 50px;
+    padding: 0 5px 0 0;
+    font-size: 15px;
+    border: 1px solid #0981bd;
+    border-radius: 5px;
 }
 #add_inf_laser {
-
+	display: table;
+	height: 90px;
+}
+#addFields {
+	display: table-cell;
+	width: 49%;
+}
+#addFields span:last-child {
+	float: right;
+	margin-right: 5px;
+}
+#addFields span:first-child {
+	float: right;
+}
+#laser_output_res {
+	display: table-cell;
+	width: 49%;	
+	font-size: 28px;
+	line-height: 33px;
+	vertical-align: bottom;
+	text-align: right;
+	color: gray;
+	font-weight: bold;
+}
+.addTextField {
+	width: 250px;
+	height: 20px;
+	color: gray;
+	font-weight: bold;
+	font-size: 0.85em;
+	border-bottom: 1px dotted silver;
+	line-height: 21px;
 }
 #add_paper_price_laser {
-	display: block;
-	
+		
 }
 #add_print_price_laser {
-	display: block;
 	
 }
 #add_print_copy_laser {
-	display: block;
 	
 }
+#add_discount_laser {
+	
+}
+
 #print_sides_laser {
 
 }
 #sides_laser {
 
 }
-#laser_output_res {
-	float: right;
-}
+
 #button_laser {
 	clear: both;
 }
@@ -81,7 +211,18 @@
   	text-align: center;
 }
 #res_laser_button {
-	float: right;
+	cursor: pointer;
+    width: 150px;
+    height: 41px;
+    float:right;
+    margin: 0px 0;
+    border: 1px solid #0a88c7;
+    border-radius: 7px;
+    background-color: #0981bd;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1em;
 }
 .alert_laser {
     background: #fff;
@@ -94,42 +235,140 @@
 	display: table-cell;
 	width: 48%;
 	padding: 6px;
-	height: 310px;
+	height: 100%;
 	float: right;
 	border: 1px solid silver;
 	border-radius: 8px;
+	overflow: hidden;
+	background-color: #ebf2f6;
+}
+#titleIJ {
+	display: block;
+	position: relative;
+	top: -7px;
+	left:-7px;
+	width: 104%;
+	height: 1.5em;
+	background-color: #0981bd;
+	text-align: center;
+	padding: 8px 0 0 0;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.2em;
 }
 #quantity_inkJet {
-
+	height: 30px;
+	padding: 2px 0 0 0;
 }
 #input_inkjet {
-
+	font-style: italic;
+    text-align: right;
+    height: 23px;
+    width: 150px;
+    padding: 0 5px 0 0;
+    font-size: 15px;
+    border: 1px solid #0981bd;
+    border-radius: 5px;
 }
 #quality_inkjet {
 	display: table;
 	width: 100%;
+	margin: 5px 0;
 }
+#quality_inkjet input {
+	margin-top: 15px;
+}
+#quality_inkjet label {
+	font-size: 1em;
+}
+
+
+#paper_select_type_IJ {
+	border-top: 1px solid silver;
+	padding: 5px 0 0 0;
+	height: 30px;
+	margin: 8px 0;
+}
+#paper_format_select_IJ {
+	height: 30px;
+	margin: 5px 0;
+}
+
+#IJ_discount {
+	height: 24px;
+	padding: 7px 0;
+	margin: 5px 0;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver; 
+}
+#IJ_discount_input {
+	font-style: italic;
+    text-align: right;
+    height: 23px;
+    width: 50px;
+    padding: 0 5px 0 0;
+    font-size: 15px;
+    border: 1px solid #0981bd;
+    border-radius: 5px;
+}
+
 #inkjet_text {
 	display: table-cell;
-	width: 33%;
+	width: 30%;
 }
 #inkjet_pic {
 	display: table-cell;
-	width: 33%;
+	width: 38%;
 }
 #inkjet_foto {	
 	display: table-cell;
-	width: 33%;
+	width: 30%;
 }
-#print_sides_laser {
 
+
+#addInfIJ {
+	display: table;
+	height: 90px;
+	margin: 42px 0 0 0;
 }
-#sides_laser {
-	
+#add_inf_IJ {
+	display: table-cell;
+	width: 49%;
 }
-#inkjet_output_res {
+#add_inf_IJ span:last-child {
+	float: right;
+	margin-right: 5px;
+}
+#add_inf_IJ span:first-child {
 	float: right;
 }
+#inkjet_output_res {
+	display: table-cell;
+	width: 49%;	
+	font-size: 28px;
+	line-height: 33px;
+	vertical-align: bottom;
+	text-align: right;
+	color: gray;
+	font-weight: bold;
+}
+#add_paper_price_IJ {
+
+}
+#add_print_price_IJ {
+
+}
+#add_print_copy_IJ {
+
+}
+#add_discount_IJ {
+
+}
+
+
+
+
+
 #button_inkJet {
 	clear: both;
 }
@@ -148,5 +387,16 @@
   	text-align: center;
 }
 #res_inkjet_button {
-	float: right;
+	cursor: pointer;
+    width: 150px;
+    height: 41px;
+    float:right;
+    margin: 0px 0;
+    border: 1px solid #0a88c7;
+    border-radius: 7px;
+    background-color: #0981bd;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1em;
 }

@@ -1,0 +1,249 @@
+#largeFormatWrapper {
+	height: 100%;
+	min-height: 240px;
+	background-color: #ebf2f6;
+
+}
+#input_fields {
+	display: table;
+	border-spacing: 5px 5px;
+	width: 100%;
+	height: 50px;
+}
+#input_W {
+	width: 33%;
+	display: table-cell;
+	border: 1px solid #0981bd;
+	border-radius: 8px;
+	margin: 5px;
+	vertical-align: middle;
+	overflow: hidden;
+}
+#input_W label:first-child {
+	display: block;
+	background-color: #0981bd;
+	width: 73px;
+	height: 27px;
+	float:left;
+	padding: 12px 0 0 8px;
+	margin: 0 5px 0 0;
+	font-weight: bold;
+	color: #fff;
+}
+#input_W label:last-child {
+	display: block;
+	background-color: #0981bd;
+	width: 33px;
+	height: 27px;
+	float:right;
+	padding: 12px 0 0 8px;
+	margin: 0 0 0 5px;
+	font-weight: bold;
+	color: #fff;
+}
+#input_weight {
+	font-style: italic;
+	font-weight: bold;
+    text-align: right;
+    height: 25px;
+    width: 150px;
+    padding: 0 5px 0 0;
+    font-size: 1.2em;
+    border: 1px solid #0981bd;
+    border-radius: 7px;
+    margin: 6px 0 0 0;
+}
+#input_H {
+	width: 33%;
+	display: table-cell;
+	border: 1px solid #0981bd;
+	border-radius: 8px;
+	margin: 5px;
+	vertical-align: middle;
+	overflow: hidden;
+}
+#input_H label:first-child {
+	display: block;
+	background-color: #0981bd;
+	width: 73px;
+	height: 27px;
+	float:left;
+	padding: 12px 0 0 8px;
+	margin: 0 5px 0 0;
+	font-weight: bold;
+	color: #fff;
+}
+#input_H label:last-child {
+	display: block;
+	background-color: #0981bd;
+	width: 33px;
+	height: 27px;
+	float:right;
+	padding: 12px 0 0 8px;
+	margin: 0 0 0 5px;
+	font-weight: bold;
+	color: #fff;
+}
+#input_height {
+	font-style: italic;
+	font-weight: bold;
+    text-align: right;
+    height: 25px;
+    width: 150px;
+    padding: 0 5px 0 0;
+    font-size: 1.2em;
+    border: 1px solid #0981bd;
+    border-radius: 7px;
+    margin: 6px 0 0 0;
+}
+#paper {
+	width: 30%;
+	display: table-cell;
+	border: 1px solid #0981bd;
+	border-radius: 7px;
+	margin: 5px;
+	background-color: #0981bd;
+	vertical-align: middle;
+	position: relative;
+}
+#type_papers {
+	width: 220px;
+	position: absolute;
+	top: 7px;
+	left: 21px;
+}
+#add_option {
+	
+	display: table;
+	height: 90px;
+	border-spacing: 5px 5px;
+	margin: 10px 5px;
+	border: 1px solid #0981bd;
+	border-radius: 7px;
+	width: 540px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 0.9em;
+	background-color: #0981bd;
+	float: left;
+}
+#eyelets {
+	display: table-cell;
+	width: 145px;
+	padding: 0 0 0 5px;
+	border-right: 1px solid #fff;
+
+}
+#eyelets input {
+	width: 40px;
+	height: 25px;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	font-style: italic;
+	border: 1px solid #fff;
+	border-radius: 7px;
+	margin-top: 22px;
+}
+#sticking {
+	display: table-cell;
+	width: 210px;
+	padding: 0 0 0 10px;
+	border-right: 1px solid #fff;
+}
+#sticking input {
+	width: 40px;
+	height: 25px;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	font-style: italic;
+	border: 1px solid #fff;
+	border-radius: 7px;
+}
+#discount_LF {
+	width: 120px;
+	padding: 0 0 0 15px;
+}
+#discount_LF input {
+	width: 40px;
+	height: 25px;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	font-style: italic;
+	border: 1px solid #fff;
+	border-radius: 7px;
+}
+#res_inf {
+	float: right;
+	width: 300px;
+	margin: 5px;
+
+}
+#result {
+	float: right;
+	font-size: 2em;
+	line-height: 0.35em;
+}
+#result_eyelets {
+	float: right;
+	font-size: 2em;
+	line-height: 0.35em;
+}
+#result_discount {
+	float: right;
+	font-size: 2em;
+	line-height: 0.35em;
+}
+#button_res {
+	clear: right;
+}
+#res_button {
+	cursor: pointer;
+    width: 200px;
+    height: 41px;
+    float:right;
+    margin: 5px 5px;
+    border: 1px solid #0a88c7;
+    border-radius: 7px;
+    background-color: #0981bd;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1em;
+}
+#massage_LF {
+	display: block;
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+	width: 530px;
+	height: 30px;
+	padding: 5px;
+  	border: 1px solid #D22C02;
+  	border-radius: 4px;
+  	color: #D63301;
+  	background-color: #FFCCBA;
+  	font-size: 1.1em;
+  	font-weight: bold;
+  	text-align: center;
+  	line-height: 30px;
+}
+.alert_LF {
+    background: #fff;
+    box-shadow: 0 0 0.5em red;
+    border: 1px solid red;
+}
+#resInfText {
+	border-bottom: 1px dotted silver;
+	padding: 3px 0;
+	margin: 10px 0;
+	font-weight: bold;
+	color: gray;
+}
+.uahLF {
+    font-size: 14px;
+    float: right;
+    margin-left: 3px;
+}

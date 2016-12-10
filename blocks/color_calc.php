@@ -1,32 +1,37 @@
 <div id="color_wrapper">
 
 	<div id="laser_col">
-		<span>МФУ ДРУК</span>
+		<div id="title_laser">МФУ ДРУК</div>
 		<div id="quantity_laser">
 			<label for="input_quantity">Введіть кількість</label>
-			<input id="input_quantity" type="text" name="quantity" size="20">
+			<input id="input_quantity" type="text" name="quantity" size="20" placeholder="Введіть кількість">
 		</div>
 		<div id="quality_laser">
 			<div id="laser_text">
+				<div id="textCheckImgLaser"></div>
 				<input id="textCheck" type="radio" name="radioCheck" checked="">
 				<label for="textCheck">Текст</label>
 			</div>
 			<div id="laser_pic">
+				<div id="textPhotoCheckImgLaser"></div>
 				<input id="textPhotoCheck" type="radio" name="radioCheck">
 				<label for="textPhotoCheck">Текст + Фото</label>
 			</div>
 			<div id="laser_foto">
+				<div id="photoCheckImgLaser"></div>
 				<input id="photoCheck" type="radio" name="radioCheck">
 				<label for="photoCheck">ФОТО</label>
 			</div>
 		</div>
-		<div id="print_sides_laser">
-			<input id="sides_laser" type="checkbox" name="two_sides">
-			<label for="sides_laser">Двухсторонній друк</label>
-		</div>
-		<div id="laserBlackPrint">
-			<input id="black_laser" type="checkbox" name="blackColorLaser">
-			<label for="black_laser">Чорно-білий друк</label>
+		<div id="addLaserOption">
+			<div id="print_sides_laser">
+				<input id="sides_laser" type="checkbox" name="two_sides">
+				<label for="sides_laser">Двухсторонній друк</label>
+			</div>
+			<div id="laserBlackPrint">
+				<input id="black_laser" type="checkbox" name="blackColorLaser">
+				<label for="black_laser">Чорно-білий друк</label>
+			</div>
 		</div>
 		<div id="paper_select_type">
 			<select id="paper_type_laser">
@@ -56,20 +61,22 @@
 		</div>
 		<div id="laser_discount">
 			<label for="laser_discount_input">Знижка</label>
-			<input id="laser_discount_input" type="text" name="quantity" size="7">
+			<input id="laser_discount_input" type="text" name="quantity" size="7" placeholder="0%">
 		</div>
 		<div id="add_inf_laser">
-			<div id="add_paper_price_laser">0.00</div>
-			<div id="add_print_price_laser">0.00</div>
-			<div id="add_print_copy_laser">0.00</div>
-			<div id="add_discount_laser">0.00</div>
+			<div id="addFields">
+
+				<div class="addTextField">Вартість паперу: <span> грн.</span><span id="add_paper_price_laser">0.00</span></div>
+				<div class="addTextField">Вартість друку: <span> грн.</span><span id="add_print_price_laser">0.00</span></div>
+				<div class="addTextField">Вартість однієї копії: <span> грн.</span><span id="add_print_copy_laser">0.00</span></div>
+				<div class="addTextField">Вартість зі знижкою: <span> грн.</span><span id="add_discount_laser">0.00</span></div>	
+			</div>
+			<div id="laser_output_res">0.00<span class="uah"> грн.</span></div>
 		</div>
-		<div id="laser_output_res">
-			0.00 грн.
-		</div>
+		
 
 		<div id="button_laser">
-			<button id="res_laser_button" onclick="getCheckField()">Розрахувати вартість</button>
+			<button id="res_laser_button" onclick="getCheckField()">Розрахувати</button>
 		</div>
 		<div id="massage_laser"></div>
 	</div>
@@ -77,21 +84,24 @@
 	<!--INK-JET PRINT-->
 
 	<div id="inkJet_col">
-		<span>СТРУМЕНЕВИЙ ДРУК</span>
+		<div id="titleIJ">СТРУМЕНЕВИЙ ДРУК</div>
 		<div id="quantity_inkJet">
 			<label for="input_inkjet">Введіть кількість</label>
-			<input id="input_inkjet" type="text" name="quantity" size="20">
+			<input id="input_inkjet" type="text" name="quantity" size="20" placeholder="Введіть кількість">
 		</div>
 		<div id="quality_inkjet">
 			<div id="inkjet_text">
+				<div id="textCheckImgLaser"></div>
 				<input id="IJTextCheck" type="radio" name="radioCheckIJ" checked="">
 				<label for="IJTextCheck">Текст</label>
 			</div>
 			<div id="inkjet_pic">
+				<div id="textPhotoCheckImgLaser"></div>
 				<input id="IJTextPhotoCheck" type="radio" name="radioCheckIJ">
 				<label for="IJTextPhotoCheck">Текст + Фото</label>
 			</div>
 			<div id="inkjet_foto">
+				<div id="photoCheckImgLaser"></div>	
 				<input id="IJPhotoCheck" type="radio" name="radioCheckIJ">
 				<label for="IJPhotoCheck">ФОТО</label>
 			</div>
@@ -119,19 +129,20 @@
 		</div>
 		<div id="IJ_discount">
 			<label for="IJ_discount_input">Знижка</label>
-			<input id="IJ_discount_input" type="text" name="quantity" size="7">
+			<input id="IJ_discount_input" type="text" name="quantity" size="7" placeholder="0%">
 		</div>
-		<div id="add_inf_IJ">
-			<div id="add_paper_price_IJ">0.00</div>
-			<div id="add_print_price_IJ">0.00</div>
-			<div id="add_print_copy_IJ">0.00</div>
-			<div id="add_discount_IJ">0.00</div>
+		<div id="addInfIJ">
+			<div id="add_inf_IJ">
+				<div class="addTextField">Вартість паперу: <span> грн.</span><span id="add_paper_price_IJ">0.00</span></div>
+				<div class="addTextField">Вартість друку: <span> грн.</span><span id="add_print_price_IJ">0.00</span></div>
+				<div class="addTextField">Вартість однієї копії: <span> грн.</span><span id="add_print_copy_IJ">0.00</span></div>
+				<div class="addTextField">Вартість зі знижкою: <span> грн.</span><span id="add_discount_IJ">0.00</span></div>
+			</div>
+			<div id="inkjet_output_res">0.00<span class="uah"> грн.</span></div>
 		</div>
-		<div id="inkjet_output_res">
-			0.00 грн.
-		</div>
+		
 		<div id="button_inkJet">
-			<button id="res_inkjet_button" onclick="getCheckFieldIJ()">Розрахувати вартість</button>
+			<button id="res_inkjet_button" onclick="getCheckFieldIJ()">Розрахувати</button>
 		</div>
 		<div id="massage_IJ"></div>
 	</div>

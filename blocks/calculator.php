@@ -4,7 +4,9 @@
         <input id="input_value" type="number" size="20" placeholder="Введіть тираж" />
     </div>
     <div class="print_sides">
+        <div class="printSidesTitle">Сторони та колір задруковування</div>
         <div class="colors_wrapper">
+
             <div class="first_side">
                 <input type="checkbox" id="sides_1" name="sides_1" value="1" onclick="getSides()"/>
                 <label id="colors_label_1" for="sides_1" onclick="checkedSides()">Одностронній</label>
@@ -109,10 +111,10 @@
         <label for="bindChekbox-3">Тверда обгортка</label>
     </div>
 </div>
-<p style="height: 25px;">
+<div id="discountFieldRiso">
     <label for="discount" class="text_calc">Знижка: </label>
     <input type="number" id="discount" size="20" placeholder="0%" value="" />
-</p>
+</div>
 <div class="counting_results">
     <div class="count_res_add">
         <div class="count_cont"><span class="count_res_add_text">Вартість паперу: </span><span class="count_res_add_price">0.00 <span class="uah_m">грн.</span></span></div>

@@ -75,7 +75,10 @@
  	if (!amount.value || type_paper.value == 'false' || format_paper.value == 'false') {
  		
  		alertMassage();
- 		if (!amount.value) { amount.setAttribute('class', 'alert_laser'); };
+ 		if (!amount.value) {
+ 			amount.setAttribute('class', 'alert_laser');
+ 			amount.style.border = '1px solid red';
+ 		};
  		if (type_paper.value == 'false') { type_paper.setAttribute('class', 'alert_laser'); };
  		if (format_paper.value == 'false') { format_paper.setAttribute('class', 'alert_laser'); };
  	}
@@ -175,7 +178,7 @@
  	add_paper_laser.innerHTML = (paperLaser * amount.value).toFixed(2);
  	add_print_laser.innerHTML = ((Math.ceil(priceLaser.toFixed(5) * 10)) / 10).toFixed(2);
  	add_copy_laser.innerHTML = (((Math.ceil(priceLaser.toFixed(5) * 10)) / 10).toFixed(2) / amount.value + paperLaser).toFixed(2);
- 	price_lazer.innerHTML = ((Math.ceil(priceLaser.toFixed(5) * 1)) / 1 + paperLaser * amount.value).toFixed(2);
+ 	price_lazer.innerHTML = ((Math.ceil(priceLaser.toFixed(5) * 10)) / 10 + paperLaser * amount.value).toFixed(2) + "<span class='uah'> грн.</span>";
  }
  
  function getAddPrice () {
@@ -285,7 +288,10 @@ var qualityIJ = document.getElementsByName('radioCheckIJ'),
  		if (!amountIJ.value || paper_type_IJ.value == 'false' || paper_format_IJ.value == 'false') {
  		
  			alertMassageIJ();
- 			if (!amountIJ.value) { amountIJ.setAttribute('class', 'alert_laser'); };
+ 			if (!amountIJ.value) {
+ 				amountIJ.setAttribute('class', 'alert_laser');
+ 				amountIJ.style.border = '1px solid red';
+ 			};
  			if (paper_type_IJ.value == 'false') { paper_type_IJ.setAttribute('class', 'alert_laser'); };
  			if (paper_format_IJ.value == 'false') { paper_format_IJ.setAttribute('class', 'alert_laser') }; 
   		}
@@ -332,5 +338,5 @@ var qualityIJ = document.getElementsByName('radioCheckIJ'),
  				add_discount_IJ.innerHTML = '0.00';
  			}
 
- 		inkjet_output_res.innerHTML = ((printPrice + paperFormatPrice) * amountIJ.value).toFixed(2);
+ 		inkjet_output_res.innerHTML = ((printPrice + paperFormatPrice) * amountIJ.value).toFixed(2) + "<span class='uah'> грн.</span>";
  	}

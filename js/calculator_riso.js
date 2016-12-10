@@ -308,14 +308,17 @@ function calculate () {
         if (!input_value.value) {
             empty_fields.push(text_massage.empty_input_value);
             input_value.setAttribute('class','input_value');
+            input_value.style.border = '1px solid red';
         }
         if (paper_format.value == 'false') {
             empty_fields.push(text_massage.empty_paper_format);
             paper_format.setAttribute('class','input_value');
+            paper_format.style.border = '1px solid red';
         }
         if (paper_type.value == 'false') {
             empty_fields.push(text_massage.empty_paper_type);
             paper_type.setAttribute('class','input_value');
+            paper_type.style.border = '1px solid red';
         }
         if (sides_1.checked == "" && sides_2.checked == "") {
             empty_fields.push(text_massage.empty_sides);

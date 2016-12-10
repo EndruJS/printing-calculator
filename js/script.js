@@ -32,9 +32,11 @@ get_Date();
         var input = document.getElementById(field_id);
         input.onblur = function () {
             this.className = '';
+            this.style.border = '';
         }
         input.onfocus = function () {
             this.className = 'focus_field';
+            this.style.border = '';
         }
     }
     onBlur('input_value');
@@ -51,6 +53,9 @@ get_Date();
     onBlur('input_inkjet');
     onBlur('paper_type_IJ');
     onBlur('paper_format_IJ');
+    onBlur('input_height');
+    onBlur('input_weight');
+    onBlur('type_papers');
 /*-----------------------------------------------*/
 
 document.getElementById('celebrate').innerHTML = "Свято Святого Миколая";

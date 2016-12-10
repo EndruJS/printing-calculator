@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/calculator_riso.css" />
     <link rel="stylesheet" href="css/color_calc.css">
+    <link rel="stylesheet" href="css/offset.css">
+    <link rel="stylesheet" href="css/large_format.css">
 </head>
 <body>
 
@@ -25,10 +27,10 @@
     </div>
     <div id="content">       
        <div class="tabs">
-            <input id="tab1" class="in_tabs" type="radio" name="tabs">
+            <input id="tab1" class="in_tabs" type="radio" name="tabs" checked>
             <label for="tab1" class="tabs" title="Вкладка 1">Тиражування (різографія)</label>
  
-            <input id="tab2" class="in_tabs" type="radio" name="tabs" checked>
+            <input id="tab2" class="in_tabs" type="radio" name="tabs">
             <label for="tab2" class="tabs" title="Вкладка 2">Кольоровий друк</label>
  
             <input id="tab3" class="in_tabs" type="radio" name="tabs">
@@ -44,10 +46,10 @@
                 <?php include("blocks/color_calc.php");?>
             </div>  
             <div id="content3">
-                333
+                <?php include("blocks/offset.php");?>
             </div>  
             <div id="content4">
-                444
+                <?php include("blocks/large_format.php");?>
             </div>   
       
         </div>
@@ -57,5 +59,7 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script src="js/calculator_riso.js"></script>
 <script src="js/color_calc.js"></script>
+<script src="js/offset.js"></script>
+<script src="js/large_format.js"></script>
 </body>
 </html>
