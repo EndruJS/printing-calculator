@@ -8,7 +8,7 @@ var colors_sides_first = document.getElementById('colors_label_1');
 var colors_sides_second = document.getElementById('colors_label_2');
 var sides_1 = document.getElementById('sides_1');
 var sides_2 = document.getElementById('sides_2');
-var discount = document.getElementById('discount');
+var discount = document.getElementById('discountR');
 var bind = false;
 /*---PRICES---*/
 var currentCursDollar = 26.7;
@@ -253,6 +253,8 @@ function calculate () {
         currentOrder.type = paper_type.value;
         currentOrder.discount = (!discount.value) ? 0 : discount.value;
         
+
+
         priceOrder.price_paper = currentOrder.circulation * (currentOrder.type_paper_price / 1000) + deprec;
         priceOrder.price_print = (currentOrder.black_ink + currentOrder.colors_ink) * master_frame + (((currentOrder.black_ink * black_ink) + (currentOrder.colors_ink * color_ink)) * k) + deprec;
         
@@ -362,9 +364,11 @@ function calculate () {
             count_result_price[0].innerHTML = priceOrder.price.toFixed(2) + ' <span class="uah">грн.</span>';       /*---Coast all order---*/
             count_result_price[1].innerHTML = priceOrder.price_discount.toFixed(2) + ' <span class="uah">грн.</span>';       /*---Coast all order with discount---*/
         if (discount.value && input_value && paper_type && paper_format) {
+            console.log(discount.value);
             count_res_discount[0].style.display = 'block';
         } else {
             count_res_discount[0].style.display = 'none';
+            console.log(discount.value);
         }
     }
     /*for (var key in priceOrder) {

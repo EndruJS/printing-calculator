@@ -4,6 +4,7 @@ body {
     overflow: hidden;
     width: auto;
     background-image: url(/img/background.jpg);
+    background-size: 100vw;
     background-repeat: no-repeat;
     position: relative;
 }

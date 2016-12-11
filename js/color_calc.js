@@ -58,7 +58,7 @@
  	blackPrint = document.getElementById('black_laser'),
  	type_paper = document.getElementById('paper_type_laser'),
  	format_paper = document.getElementById('paper_format_laser'),
- 	discount = document.getElementById('laser_discount_input');
+ 	discountL = document.getElementById('laser_discount_input');
  
  
  
@@ -169,9 +169,9 @@
  	
  
  
- 	if (discount.value) {
+ 	if (discountL.value) {
  		var resLaser = ((Math.ceil(priceLaser.toFixed(5) * 10)) / 10 + paperLaser * amount.value).toFixed(2);
- 		add_discount_laser.innerHTML = (resLaser - (resLaser * discount.value / 100)).toFixed(2);
+ 		add_discount_laser.innerHTML = (resLaser - (resLaser * discountL.value / 100)).toFixed(2);
  	}
  	else {add_discount_laser.innerHTML = '0.00';}
  
