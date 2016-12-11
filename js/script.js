@@ -17,9 +17,13 @@ function get_Date () {
     var year = date.getFullYear();
     var month = date.getMonth();
     var m_day = date.getDate();
+    var c_day = date.getDay();
     var month_ukr = ["Січня","Лютого","Березня","Квітня","Травня","Червня","Липня","Серпня","Вересня","Жовтня","Листопада","Грудня"];
+    var days = ['Неділя','Понеділок','Вівторок','Середа','Четвер','П\'ятниця','Субота'];
     month = month_ukr[month];
+    c_day = days[c_day];
     if (m_day<10) {m_day = "0" + m_day;}
+    document.getElementById('current_day').innerHTML = c_day;
     document.getElementById('date_m_date').innerHTML = m_day;
     document.getElementById('date_month').innerHTML = month;
     document.getElementById('date_year').innerHTML = year;
@@ -57,5 +61,3 @@ get_Date();
     onBlur('input_weight');
     onBlur('type_papers');
 /*-----------------------------------------------*/
-
-document.getElementById('celebrate').innerHTML = "Свято Святого Миколая";

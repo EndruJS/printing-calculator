@@ -1,94 +1,75 @@
 body {
     margin: 0;
     padding: 0;
-    height: auto;
+    overflow: hidden;
     width: auto;
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+#wrapperBody {
+  width: 920px;
+  display: block;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #fff;
+  border: 1px solid gray;
+  box-shadow: 0 0 30px #fff;
 }
 #top {
     width: 100%;
     height: 110px;
     position: relative;
+    display: table;
+}
+#left_block {
+  display: table-cell;
+  width: 300px;
 }
 #logo_cont {
-    width: 300px;
-    height: 100px;
-    margin: 5px;
-    float: left;
-    font-family: sans-serif;
-    font-size: 30px;
-    border-right: 1px dotted silver;
+  display: table-cell;
+  width: 300px;
+  margin: 20px 0 0 0;
+  float: left;
+  font-family: sans-serif;
+  font-size: 30px;
+  
+  text-align: center;
 }
 p.under_logo {
     color: gray;
     font-size: 14px;
     line-height: 0;
     text-transform: uppercase;
-    letter-spacing: 4.5px;
+    position: relative;
+    left: 3px;
+    letter-spacing: 4.4px;
 }
-#top_menu {
-    width: auto;
-    height: 100px;
-    margin: 5px 5px 5px 0px;
-    float: left;
-}
-#top_menu ul {
-    list-style: none;
-    display: block;
-    margin: 0;
-    padding: 0;
-    width:100%;
-}
-#top_menu ul li {
-    display: block;
-    float: left;
-}
-#top_menu ul li a {
-    display: block;
-    border:1px solid #ccc;
-    border-radius: 5px;
-    background-color: silver;
-    margin: 2px;
-    padding: 5px 15px;
-    text-decoration: none;
-    font-family: sans-serif;
-    color: #fff;
-    text-shadow: #000;
-}
+
 #clock_date_cont {
-    width: 400px;
+  display: table-cell;
+    width: 300px;
     height: 100px;
-    margin: 5px;
     float: right;
     font-family: sans-serif;
     color: #000;
-    border-left: 1px dotted silver;
-}
-#today_celebrate {
-    float: left;
-    position: relative;
-    left:5px;
-    font-size: 14px;
-    font-weight: bold;
-    color: silver;
-}
-#celebrate {
-    position: relative;
-    top: 20px;
-    left: 15px;
-    color: #b30e1b;
-    font-weight: 600;
-
-}
-#today_celebrate span{
-    float: left;
-    position: absolute;
 }
 #clock_con {
-    font-size: 40px;
+  width: 150px;
+    font-size: 39px;
     display: inline-block;
     float: right;
     position: absolute;
-    right:15px;
+    right:0px;
+    top: 50px;
+    font-weight: bold;
+    font-style: italic;
+    border: 1px solid #0981bd;
+    background-color: #0981bd;
+    border-radius: 7px 0px 0px 7px;
+    padding: 5px 0px 5px 12px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
 }
 #cl_hours {
     float:left;
@@ -101,50 +82,66 @@ p.under_logo {
 #cl_seconds {
     float: left;
     font-size: 20px;
-    margin: 17px 0 0 10px;
-    color: red;
+    margin: 17px 0 0 5px;
+    width: 25px;
+    /*color: #0981bd;*/
 }
 #date_con {
-    position: absolute;
+    display: table;
+    width:210px;
+    height: 50px;
+    margin: 5px;
+    font-style: italic;
     float:right;
-    right:10px;
-    top:60px;
-    width:150px;
+}
+#current_day {
+  
+  display: table-cell;
+  font-weight: bold;
+  color: #0981bd;
+  
 }
 #date_m_date {
-    float: left;
-    font-size: 50px;
-    margin: 0 5px 0 0;
+  display: table-cell;
+    
+    font-size: 47px;
     line-height: 40px;
+    color: #0981bd;
+    padding: 15px 0 -15px 0;
+    margin: 0 0 0 15px;
+    width: auto;
+
+    font-weight: bold;
+    
+}
+#monthYear {
+    display: table-cell;
+    vertical-align: top;
 }
 #date_month {
+    width: auto;
     margin: 0;
     font-weight: bold;
-    margin: 2px 0 0 0;
+    color: #0981bd;
 }
 #date_year {
-    margin: 0;
+    width: auto;
+    margin: 3px 0 0 0;
     font-weight: bold;
+    
 }
 #middle {
     width: 100%;
     position: relative;
     min-height:300px;
     height: 100%;
-    border-top:1px solid silver;
+    margin: 0 auto;
     display: table;
 }
-#left_menu {
-    width: 305px;
-    min-height: 100px;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: table-cell;
-    border-right:1px dotted silver;
-}
+
 #content {
     width: auto;
+    margin: auto;
     margin-left:310px;
     min-height: 200px;
     height: 100%;
@@ -152,12 +149,7 @@ p.under_logo {
     display: table-cell;
 }
 #bottom {
-    width: 100%;
-    height: 115px;
-    /*background-color: silver;*/
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    
 }
 /*---------------TABS-------------------*/
 .tabs {
