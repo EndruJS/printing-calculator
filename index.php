@@ -12,12 +12,7 @@
 <body>
     <div id="wrapperBody">
     <div id="top">
-        <div id="left_block"></div>
-        <div id="logo_cont">
-            <span>CREATIVE <span style="color: #0981bd">DESIGN</span></span>
-            <p class="under_logo">Оперативна поліграфія</p>
-        </div>
-        <div id="clock_date_cont">
+        <div id="left_block">
             
             <div id="date_con">
                 <div id="current_day"></div>
@@ -27,6 +22,15 @@
                     <div id="date_year"></div>  
                 </div>
             </div>
+
+        </div>
+        <div id="logo_cont">
+            <span>CREATIVE <span style="color: #0981bd">DESIGN</span></span>
+            <p class="under_logo">Оперативна поліграфія</p>
+        </div>
+        <div id="clock_date_cont">
+            
+            
             <div id="clock_con">
                 <div id="cl_hours"></div>
                 <div id="cl_minutes"></div>

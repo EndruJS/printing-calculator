@@ -224,6 +224,10 @@
     text-shadow: 1px 1px 2px black;
     font-size: 1em;
 }
+#res_laser_button:hover {
+	background-color: #097ab3;
+    box-shadow: 1px 2px 4px #031924;
+}
 .alert_laser {
     background: #fff;
     box-shadow: 0 0 0.5em red;
@@ -399,4 +403,8 @@
     font-weight: bold;
     text-shadow: 1px 1px 2px black;
     font-size: 1em;
+}
+#res_inkjet_button:hover {
+	background-color: #097ab3;
+    box-shadow: 1px 2px 4px #031924;
 }

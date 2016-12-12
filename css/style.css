@@ -26,11 +26,12 @@ body {
 #left_block {
   display: table-cell;
   width: 300px;
+  font-family: sans-serif;
 }
 #logo_cont {
   display: table-cell;
   width: 300px;
-  margin: 20px 0 0 0;
+  margin: 25px 0 0 0;
   float: left;
   font-family: sans-serif;
   font-size: 30px;
@@ -62,7 +63,7 @@ p.under_logo {
     float: right;
     position: absolute;
     right:0px;
-    top: 50px;
+    top: 25px;
     font-weight: bold;
     font-style: italic;
     border: 1px solid #0981bd;
@@ -83,23 +84,33 @@ p.under_logo {
 #cl_seconds {
     float: left;
     font-size: 20px;
-    margin: 17px 0 0 5px;
+    margin: 15px 0 0 8px;
     width: 25px;
     /*color: #0981bd;*/
 }
 #date_con {
     display: table;
-    width:210px;
-    height: 50px;
+    width:180px;
+    height: 65px;
     margin: 5px;
+    position: absolute;
+    left: -5px;
+    top: 10px;
+    font-weight: bold;
     font-style: italic;
-    float:right;
+    border: 1px solid #0981bd;
+    background-color: #0981bd;
+    border-radius: 0px 7px 7px 0px;
+    padding: 5px 0px 5px 12px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
 }
 #current_day {
-  
-  display: table-cell;
+  display: block;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
   font-weight: bold;
-  color: #0981bd;
+  
   
 }
 #date_m_date {
@@ -107,23 +118,29 @@ p.under_logo {
     
     font-size: 47px;
     line-height: 40px;
-    color: #0981bd;
+    
     padding: 15px 0 -15px 0;
     margin: 0 0 0 15px;
     width: auto;
-
-    font-weight: bold;
     
+    font-weight: bold;
+    position: absolute;
+    left: -3px;
 }
 #monthYear {
     display: table-cell;
-    vertical-align: top;
+    vertical-align: bottom;
+    
+    height: 30px;
+    position: absolute;
+    left: 80px;
 }
 #date_month {
     width: auto;
     margin: 0;
     font-weight: bold;
-    color: #0981bd;
+    
+    
 }
 #date_year {
     width: auto;

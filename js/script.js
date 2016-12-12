@@ -19,7 +19,7 @@ function get_Date () {
     var m_day = date.getDate();
     var c_day = date.getDay();
     var month_ukr = ["Січня","Лютого","Березня","Квітня","Травня","Червня","Липня","Серпня","Вересня","Жовтня","Листопада","Грудня"];
-    var days = ['Неділя','Понеділок','Вівторок','Середа','Четвер','П\'ятниця','Субота'];
+    var days = ['Неділя','ПОНЕДІЛОК','Вівторок','Середа','Четвер','П\'ятниця','Субота'];
     month = month_ukr[month];
     c_day = days[c_day];
     if (m_day<10) {m_day = "0" + m_day;}
@@ -60,4 +60,6 @@ get_Date();
     onBlur('input_height');
     onBlur('input_weight');
     onBlur('type_papers');
+    onBlur('laser_discount_input');
+    onBlur('IJ_discount_input');
 /*-----------------------------------------------*/
