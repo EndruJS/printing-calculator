@@ -264,7 +264,8 @@ function calculate () {
         priceOrder.price_discount = priceOrder.price - (priceOrder.price * discount.value / 100);
         
         priceOrder.price += bindJournal;
-        priceOrder.price_discount += bindJournal;
+        priceOrder.price_discount += bindJournal - (bindJournal * discount.value / 100);
+
         /*for (var key in costPrice) {
             console.log([key] + ": " + costPrice[key]);
         }*/

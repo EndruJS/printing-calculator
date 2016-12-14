@@ -4,7 +4,7 @@
 		<div id="title_laser">МФУ ДРУК</div>
 		<div id="quantity_laser">
 			<label for="input_quantity">Введіть кількість</label>
-			<input id="input_quantity" type="text" name="quantity" size="20" placeholder="Введіть кількість">
+			<input id="input_quantity" type="number" name="quantity" size="20" placeholder="Введіть кількість">
 		</div>
 		<div id="quality_laser">
 			<div id="laser_text">
@@ -61,7 +61,7 @@
 		</div>
 		<div id="laser_discount">
 			<label for="laser_discount_input">Знижка</label>
-			<input id="laser_discount_input" type="text" name="quantity" size="7" placeholder="0%">
+			<input id="laser_discount_input" type="number" name="quantity" size="7" placeholder="0%">
 		</div>
 		<div id="add_inf_laser">
 			<div id="addFields">
@@ -87,7 +87,7 @@
 		<div id="titleIJ">СТРУМЕНЕВИЙ ДРУК</div>
 		<div id="quantity_inkJet">
 			<label for="input_inkjet">Введіть кількість</label>
-			<input id="input_inkjet" type="text" name="quantity" size="20" placeholder="Введіть кількість">
+			<input id="input_inkjet" type="number" name="quantity" size="20" placeholder="Введіть кількість">
 		</div>
 		<div id="quality_inkjet">
 			<div id="inkjet_text">
@@ -129,7 +129,7 @@
 		</div>
 		<div id="IJ_discount">
 			<label for="IJ_discount_input">Знижка</label>
-			<input id="IJ_discount_input" type="text" name="quantity" size="7" placeholder="0%">
+			<input id="IJ_discount_input" type="number" name="quantity" size="7" placeholder="0%">
 		</div>
 		<div id="addInfIJ">
 			<div id="add_inf_IJ">
